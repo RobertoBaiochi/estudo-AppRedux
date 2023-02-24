@@ -21,6 +21,7 @@ export default createGlobalStyle`
     font-family: sans-serif;
     background: ${primaryDarkColor};
     color: ${primaryColor};
+    font-size: 1.6rem;
   }
 
   button {
