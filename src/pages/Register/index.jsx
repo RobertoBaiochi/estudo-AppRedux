@@ -1,11 +1,11 @@
 import { Container } from '../../styles/GlobalStyles';
 
-const Login = () => {
+const Register = () => {
   return (
     <Container>
-      <h1>Login</h1>
+      <h1>Register</h1>
     </Container>
   );
 };
 
-export default Login;
+export default Register;

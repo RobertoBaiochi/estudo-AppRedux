@@ -1,11 +1,11 @@
 import { Container } from '../../styles/GlobalStyles';
 
-const Login = () => {
+const Aluno = () => {
   return (
     <Container>
-      <h1>Login</h1>
+      <h1>Aluno</h1>
     </Container>
   );
 };
 
-export default Login;
+export default Aluno;
