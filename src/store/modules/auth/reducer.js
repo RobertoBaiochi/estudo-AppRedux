@@ -15,8 +15,7 @@ export default function (state = initialState, action) {
       newState.isLoggedIn = true;
       newState.token = action.payload.token;
       newState.user = action.payload.user;
-      // eslint-disable-next-line no-console
-      console.log('REDUCER', action.payload);
+      newState.isLoading = false;
       return newState;
     }
     case types.LOGIN_FAILURE: {

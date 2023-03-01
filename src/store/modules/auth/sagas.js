@@ -14,12 +14,9 @@ function* loginRequest({ payload }) {
     toast.success('Você fez login');
 
     axios.defaults.headers.head.Authorization = `Bearer ${response.data.token}`;
-    // eslint-disable-next-line no-console
-    console.log(payload.prevPath);
+
     history.push(payload.prevPath);
   } catch (e) {
-    // eslint-disable-next-line no-console
-    console.log(payload.location);
     toast.error('Usuário ou senha inválidos.');
     yield put(actions.loginFailure());
   }
@@ -31,9 +28,6 @@ function persistRehydrate({ payload }) {
   if (!token) return;
 
   axios.defaults.headers.head.Authorization = `Bearer ${token}`;
-
-  // eslint-disable-next-line no-console
-  console.log(axios.defaults.headers.head.Authorization);
 }
 
 export default all([
