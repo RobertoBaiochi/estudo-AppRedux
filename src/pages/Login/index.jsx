@@ -50,7 +50,7 @@ const Login = (props) => {
         <input
           type="text"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value.trim())}
           placeholder="Seu e-mail"
         />
         <input
