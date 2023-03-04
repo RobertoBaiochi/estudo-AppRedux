@@ -27,5 +27,5 @@ export const ProfilePicture = styled.div`
 
 export const NovoAluno = styled(Link)`
   display: block;
-  padding-top: 2rem;
+  padding: 1.5rem 0;
 `;
